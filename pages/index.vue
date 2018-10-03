@@ -9,10 +9,9 @@
         Content Management System for nuxt-locale
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
+        <nuxt-link
+          :to="'/objects'"
+          class="button--green">Objects</nuxt-link>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
