@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description d\u2019une recharge SFR\r\n\r\nUne recharge SFR de {value} vous donne la possibilit\u00E9 de recharger facilement votre carte pr\u00E9pay\u00E9e SFR. Gr\u00E2ce au code SFR, vous pouvez encore t\u00E9l\u00E9phoner, envoyer des SMS er surfer sur Internet. Le code est directement \u00E9changeable afin de recharger votre cr\u00E9dit d\u2019appel SFR. Apr\u00E8s l\u2019\u00E9change, vos {value} seront ajout\u00E9s \u00E0 votre cr\u00E9dit SFR.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s avoir termin\u00E9 le paiement, un code SFR sera visible sur votre \u00E9cran. Le code est aussi envoy\u00E9 par e-mail avec la facture. En \u00E9changeant le code, votre cr\u00E9dit d\u2019appel sera recharg\u00E9 avec {value}.\r\n\r\nEn achetant une recharge SFR, vous payez uniquement le cr\u00E9dit souhait\u00E9 et non les tarifs d\u2019un forfait. Par le biais d\u2019une recharge SFR, vous d\u00E9cidez vous-m\u00EAme vos frais de t\u00E9l\u00E9phone. Payer la recharge est s\u00E9curis\u00E9 et rapide : le code pin est imm\u00E9diatement \u00E9changeable depuis votre t\u00E9l\u00E9phone mobile. C\u2019est simple comme bonjour !",
+    "head": {
+        "title": "Recharge SFR Internet Mobile {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez facilement en ligne votre de Recharge SFR Internet Mobile {value}. Après avoir terminé le paiement avec PayPal, le Code livré directement par e-mail."
+
+    }
+}

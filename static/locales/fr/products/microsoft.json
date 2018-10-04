@@ -1,0 +1,10 @@
+{
+    "content": "\r\n## Description de la carte Microsoft\r\n\r\nAvec une carte de, {value} vous pouvez t\u00E9l\u00E9charger des nouveaux applications, jeux, et DLC\u2019s pour votre Xbox 60, Xbox One et appareil Windows 8. Utilisez le cr\u00E9dit de la carte cadeau pour acheter du contient dans le Windows Store ! Vous ajoutez du cr\u00E9dit de {value} sur votre compte Microsoft. De cette fa\u00E7on, vous pouvez acheter des achats pour votre Xbox, Windows Phone ou syst\u00E8me Windows.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s avoir termin\u00E9 votre paiement, vous recevez un code Microsoft \u00E0 \u00E9changer sur votre compte Microsoft. Il est ajout\u00E9 {value} sur votre solde Microsoft.\r\n\r\n\u00C9change le code Microsoft de {value} tout facilement via la page d\u2019encaissement ou lisez le mode d\u2019emploi pour savoir comment on encaisse le code \u00E0 la main.",
+    "head": {
+        "title": "Microsoft {value} et jouez immédiatement à votre jeu préféré",
+        "robots" : "index, follow",
+        "description":"Ne vous déplacez plus et acheter votre carte Xbox {value} immédiatement sur internet. Recevez la aussitôt par e-mail grâce à iGiftcards.{value}"
+
+    }
+}
+ 

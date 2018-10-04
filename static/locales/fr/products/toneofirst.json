@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description de la Recharge Toneo\r\n\r\nUne Recharge ToneoFirst Gift Card {value}\u20AC vous permet de recharger le cr\u00E9dit sur votre Carte Toneo First. Avec rechargeToneo First, vous ajoutez simplement {value} au solde de votre Carte Pr\u00E9pay\u00E9e Toneo First.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nDans le mail de confirmation de commande que vous recevrez apr\u00E8s le paiement, le code Toneo sera notifi\u00E9. Il vous suffira de le saisir directement sur votre compte Toneo First. Un montant de {value} sera ajout\u00E9 au solde de votre compte Toneo First.\r\n\r\nEchangez le code ToneoFirst Gift Card {value}\u20AC facilement via notre page d\u2019encaissement ou lisez dans le mode d\u2019emploi comment vous pouvez encaisser votre code d\u2019activation \u00E0 la main.",
+    "head": {
+        "title": "La Carte Toneo First de {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez facilement en ligne votre Carte Toneo First de {value}. Après avoir terminé le paiement avec PayPal, recharge Toneo First est livrée directement par e-mail."
+
+    }
+}

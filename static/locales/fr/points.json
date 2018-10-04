@@ -1,0 +1,15 @@
+{
+    "head": {
+        "title": "igiftcards",
+        "description": "",
+        "robots": "noindex, follow"
+    },
+    "title": "Cartes-Cadeaux gratuites",
+    "introText": "Échangez les points de cadeau que vous avez collectionnés contre des codes gratuits ou collectionnez plus de points pour obtenir une plus grande offre. Chaque fois que vous achetez quelque chose, vous obtenez un ou plusieurs points. Vous avez désormais {value} Collectionner pour",
+    "succes": {
+        "title": "Vos points ont été échangés !",
+        "text": "Votre demande a été envoyé. Vous recevrez un e-mail d'ici quelques instants contenant un lien dirigeant vers votre code gratuit.",
+        "text2": "Si vous ne trouvez pas d'e-mail dans votre boîte de réception, veuillez vérifier votre courrier indésirable. Si vous n'y en trouvez pas non plus, veuillez contacter notre service clients.",
+        "returnBtn": "Rentrer"
+    }
+}

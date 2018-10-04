@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description d\u2019une recharge La Poste Mobile\r\n\r\nUne recharge La Poste Mobile de {value} vous permet d\u2019augmenter votre cr\u00E9dit La Poste Mobile. Apr\u00E8s le paiement de la recharge, vous pouvez t\u00E9l\u00E9phoner, surfer sur Internet et envoyez des SMS. Quand vous avez \u00E9chang\u00E9 votre code, {value} seront ajout\u00E9s au cr\u00E9dit de votre carte pr\u00E9pay\u00E9e La Poste Mobile.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nVotre code appara\u00EEtra sur l\u2019\u00E9cran quand le paiement a \u00E9t\u00E9 termin\u00E9. Nous envoyons le code aussi par e-mail. Gr\u00E2ce \u00E0 la recharge, vous pouvez imm\u00E9diatement recharger votre cr\u00E9dit : {value} sont ajout\u00E9s \u00E0 votre cr\u00E9dit La Poste Mobile.\r\n\r\nEn utilisant une carte pr\u00E9pay\u00E9e La Poste Mobile et ses recharges, c\u2019est possible de payer seulement pour vos propres frais de t\u00E9l\u00E9phone. Comme \u00E7a, vous n\u2019\u00EAtes pas oblig\u00E9 de payer les frais d\u2019un forfait !",
+    "head": {
+        "title": "Recharge LA POSTE MOBILE {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez facilement en ligne votre de Recharge LA POSTE MOBILE {value}. Après avoir terminé le paiement avec PayPal, le Code livré directement par e-mail."
+
+    }
+}

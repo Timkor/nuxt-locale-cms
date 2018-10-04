@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description d\u2019une recharge Symacom\r\n\r\nUne recharge Symacom de {value} vous permet d\u2019augmenter le solde de votre carte pr\u00E9pay\u00E9e Symacom. De cette fa\u00E7on, vous avez en moins d\u2019une minute du nouveau cr\u00E9dit d\u2019appel avec lequel vous pouvez envoyer des SMS, t\u00E9l\u00E9phoner et surfer sur Internet. Apr\u00E8s avoir \u00E9chang\u00E9 le code, vos {value} seront ajout\u00E9s \u00E0 votre solde Symacom.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nLe code de la recharge Symacom appara\u00EEtra sur votre \u00E9cran quand vous avez pay\u00E9 la recharge en utilisant le moyen de paiement de votre choix. Ce code est imm\u00E9diatement \u00E9changeable sur votre t\u00E9l\u00E9phone mobile. Le montant de {value} st ajout\u00E9 \u00E0 votre cr\u00E9dit Symacom.\r\n\r\nEn ayant une carte pr\u00E9pay\u00E9e Symacom, vous d\u00E9cidez vous-m\u00EAme vos d\u00E9penses de communications. Comme \u00E7a, vous n\u2019\u00EAtes pas oblig\u00E9 de payez r\u00E9guli\u00E8rement les frais d\u2019un forfait.",
+    "head": {
+        "title": "Recharge Symacom à partir de {value} | Directement livrée par e-mail !",
+        "robots" : "index, follow",
+        "description":"Voulez-vous acheter en ligne une recharge Symacom ? Allez à 123recharge.fr et achetez-la en toute sécurité !"
+
+    }
+}

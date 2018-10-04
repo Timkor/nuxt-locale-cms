@@ -1,0 +1,18 @@
+{
+    "cart": {
+        "title": {
+            "desktop": "PANIER",
+            "mobile": "Résumé/Aperçu"
+        },
+        "summary": {
+            "transaction": "Frais de transaction",
+            "total": "Total",
+            "discount": "Réduction",
+            "subtotal": "Sous-total"
+        },
+        "delivery": {
+            "name": "Livraison",
+            "type": "Livraison immédiate"
+        }
+    }
+}

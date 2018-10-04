@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description carte Playstation Plus {value}\r\n\r\nAvec la  **carte Playstation Plus**  de {value} , vous b\u00E9n\u00E9ficiez d\u2019un abonnement sur Playstation Plus {value}. Profitez des jeux Playstation en mode multijoueur et en ligne, retrouver les jeux du mois, les offres exclusives et la communaut\u00E9 Playstation. Vous pouvez y acc\u00E9der directement via votre console. \r\n\r\n## Comment \u00E7a marche ?\r\n\r\nD\u00E8s que votre paiement est termin\u00E9, le code de votre  **carte Playstation Plus {value}**s\u2019affichera sur votre \u00E9cran et vous le recevrez \u00E9galement par e-mail avec votre facture. Vous pouvez l\u2019utiliser imm\u00E9diatement sur PlayStation Plus.",
+    "head": {
+        "title": "La Carte PSN {value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez votre Abonnement PSN tout simplement en ligne avec une Carte PSN de {value}. Après paiement avec PayPal, le Code PSN sera livré immédiatement par e-mail."
+
+    }
+}

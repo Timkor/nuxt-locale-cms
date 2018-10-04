@@ -1,0 +1,10 @@
+{
+    "content": "\r\n## Description de la carte pr\u00E9pay\u00E9e Battle.net\r\n\r\nAvec une carte Battle.net de {value}s {value} , vous pouvez acheter les derniers jeux sur Battle.net. Avec la carte pr\u00E9pay\u00E9e Battle.net, vous ajoutez {value} \u00E0 votre porte-monnaie Battle.net.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s paiement, vous recevez un code d\u2019activation de Battle.net que vous pouvez \u00E9changer imm\u00E9diatement sur votre compte Battle.net. Un montant de {value}s {value} sera ajout\u00E9 \u00E0 votre porte-monnaie Battle.net.\r\n\r\nEchangez le code de Battle.net de {value} tout simplement via notre page d\u2019encaissement ou lisez dans le mode d\u2019emploi comment vous pouvez l\u2019encaisser \u00E0 la main.",
+    "head": {
+        "title": "'La Carte Battle.net '{value} | Livraison immédiate par e-mail",
+        "robots": "index, follow",
+        "description":"'Achetez votre crédit Battle.net tout simplement en ligne avec une Carte Battle.net de '{value}. Après paiement avec PayPal, le Code Battle.net sera livré immédiatement par e-mail."
+
+
+    }
+}

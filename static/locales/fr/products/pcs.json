@@ -1,0 +1,9 @@
+{
+    "content": "\r\nAvec une recharge PCS de {value} vous cr\u00E9ditez le solde de votre carte PCS. La carte PCS est valable dans de plus en plus boutiques web ! Commander des v\u00EAtements, des meubles ou des appareils \u00E9lectroniques est tr\u00E8s facile en utilisant la carte de paiement pr\u00E9pay\u00E9e PCS. Apr\u00E8s avoir achet\u00E9 la recharge CPS, {value} , sont ajout\u00E9s \u00E0 votre solde.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nVous recevez un code de coupon dans votre bo\u00EEte de r\u00E9ception directement apr\u00E8s que vous avez termin\u00E9 le paiement de la recharge. Ce code est imm\u00E9diatement encaissable ! Envoyez un SMS au service client\u00E8le et votre cr\u00E9dit est recharg\u00E9 en quelques minutes.\r\n\r\n\u00C9changer le code afin de recevoir le cr\u00E9dit n\u2019est pas du tout difficile. Suivez les instructions dans le mode d\u2019emploi et votre solde sera recharg\u00E9 en un tour de main !",
+    "head": {
+        "title": "La Carte PCS de {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Description de la recharge PCS"
+
+    }
+}

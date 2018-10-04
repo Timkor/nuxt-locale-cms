@@ -1,0 +1,8 @@
+{
+    "content": "\r\n## Description de la carte virtuelle Mastercard\r\n\r\nAvec une carte virtuelle Mastercard {value} , vous pouvez acheter des produits ou des services en ligne ou dans vos magasins locaux.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nUne fois votre paiement effectu\u00E9, vous recevrez un code Mastercard pr\u00E9pay\u00E9 que vous pourrez \u00E9changer sur  **votre compte Mastercard**. Apr\u00E8s avoir utilis\u00E9 ce code, vous pouvez utiliser une carte de cr\u00E9dit virtuelle d'une valeur de {value} , que vous pouvez utiliser sur tous les sites internet qui acceptent les cartes Mastercard.\r\n\r\nVous pouvez \u00E9changer le code pr\u00E9pay\u00E9 Mastercard de {value} sur notre  [page d\u2019\u00E9change](https:\/\/igiftcards.fr\/modedemploi\/encaisser)  ou consultez le  [manuel d\u2019utilisation](https:\/\/igiftcards.fr\/modedemploi\/via-mastercard)  pour d\u00E9couvrir comment \u00E9changer le code manuellement.",
+    "head": {
+        "title": "{value}",
+        "description": "{value}",
+        "robots": "index, follow"
+    }
+}

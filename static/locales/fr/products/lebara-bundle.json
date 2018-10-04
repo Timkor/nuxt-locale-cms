@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description d\u2019une recharge Lebara\r\n\r\nUne recharge Lebara de {value} vous permet de augmenter le solde de votre carte SIM Lebara. Apr\u00E8s le rechargement, vous pouvez envoyer des SMS, t\u00E9l\u00E9phoner et surfer sur Internet. Quand le code a \u00E9t\u00E9 \u00E9chang\u00E9, vos {value} seront ajout\u00E9s \u00E0 votre solde Lebara.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nSi le paiement a \u00E9t\u00E9 termin\u00E9, le code de la recharge sera envoy\u00E9 par e-mail et il sera visible sur votre \u00E9cran. Vous pouvez directement recharger votre cr\u00E9dit d\u2019appel : {value} sont ajout\u00E9s \u00E0 votre cr\u00E9dit Lebara.\r\n\r\nPar le biais d\u2019une recharge Lebara, vous d\u00E9cidez vous-m\u00EAme vos frais de t\u00E9l\u00E9phone. De cette fa\u00E7on, vous n\u2019\u00EAtes plus oblig\u00E9 de payer les co\u00FBts d\u2019un forfait !",
+    "head": {
+        "title": " | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez facilement en ligne votre de . Après avoir terminé le paiement avec PayPal, le Code livré directement par e-mail."
+
+    }
+}

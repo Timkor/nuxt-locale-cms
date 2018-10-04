@@ -1,0 +1,18 @@
+{
+    "giftcard":{
+        "shopinformation": ["livraison immédiate","envoyé par e-mail", "Imprimer sur papier cadeau", "Ouvert 24/7", "Valable indéfiniment"],
+        "servicebox": ["livraison immédiate","envoyé par e-mail","Payer en toute sécurité","Du papier cadeau digital","C'est pourquoi"],
+        "countryselect": "Vous pouvez utiliser ces cartes cadeaux uniquement dans le pays d’achat. Faites attention de choisir le bon pays.",
+        "usablecountry": "Ce code est valable dans le(s) pays suivant(s) :",
+        "reviewstitle": "Des commentaires",
+        "image":{
+            "nowfor":"MAINTENANT POUR",
+            "servicecosts":"Les cherges"
+        },
+        "orderNowBtn":"Commander maintenant",
+        "validCountries":"Ce code est valable dans le(s) pays suivant(s) :",
+        "validCurrencies":"Ce code est valable dans le(s) pays suivant(s) :",
+        "reviewCount": "L'appréciation basée sur {value} commentaires",
+        "reviewCountTitle": "sur {value} commentaires"
+    }
+}

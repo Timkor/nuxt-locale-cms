@@ -1,0 +1,11 @@
+{
+    "type": "map",
+    "keyType": "string",
+    "valueType": {
+        "type": "object",
+        "props": {
+            "name": "string",
+            "alt": "string"
+        }
+    }
+}

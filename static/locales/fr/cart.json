@@ -1,0 +1,13 @@
+{
+    "head": {
+        "title": "Panier - igiftcards.fr",
+        "description": "Choisissez les giftcards que vous voulez acheter et payez-les avec Sofort. Vous recevrez le e-code immédiatement en e-mail et il sera également affiché sur l'écran.",
+        "robots": "noindex, follow"
+    },
+    "title": "PANIER",
+    "item": {
+        "remove": "Supprimer",
+        "service": "Les charges"
+    },
+    "total": "Total"
+}

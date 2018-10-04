@@ -1,0 +1,11 @@
+{
+    "form": {
+        "name": "Nom",
+        "email": "Adresse e-mail",
+        "message": "Message",
+        "coupon": {
+            "checkbox": "J'ai un code de coupon",
+            "input": "Code coupon"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "content": "\r\nAvec une recharge Transcash de {value} vous rechargez sans peine votre carte de cr\u00E9dit pr\u00E9pay\u00E9e Transcash. La carte Transcash est le moyen de paiement parfait quand vous devez payer vos achats en ligne. C\u2019est pratique, notamment pour effectuer des transactions internationales, ou encore pour payer vos vacances \u00E0 l\u2019\u00E9tranger par exemple. Apr\u00E8s avoir achet\u00E9 la recharge Transcash, il est ajout\u00E9 {value} , au solde de votre carte de cr\u00E9dit pr\u00E9pay\u00E9e.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s le paiement, un code pin pour la recharge sera visible sur votre \u00E9cran et est envoy\u00E9 par e-mail. Ce code est imm\u00E9diatement \u00E9changeable sur votre compte Transcash donc il n\u2019est pas n\u00E9cessaire d\u2019attendre. Vous \u00E9changez ce code et le montant est automatiquement ajout\u00E9 \u00E0 votre solde Transcash !\r\n\r\nL\u2019encaissement du code est facile. Vous suivez simplement les instructions donn\u00E9es dans le mode d\u2019emploi et votre solde sera augment\u00E9 sans probl\u00E8me. C\u2019est simple comme bonjour !",
+    "head": {
+        "title": "Le Chèque Cadeau Amazon {value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"Description de la recharge Transcash"
+
+
+    }
+}

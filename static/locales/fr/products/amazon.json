@@ -1,0 +1,10 @@
+{
+    "content": "\r\n## Description de la carte cadeau Amazon\r\n\r\nUne carte Amazon.fr Gift Card {value}\u20AC vous permet de commander des produits sur le site web d\u2019Amazon. Avec la carte cadeau Amazon, vous ajoutez {value} au solde de votre compte Amazon.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nDans le mail de confirmation de commande que vous recevrez apr\u00E8s le paiement, le code d'activation de votre carte cadeau vous sera notifi\u00E9. Il vous suffira de le saisir directement sur votre compte Amazon. Un montant de {value} sera ajout\u00E9 au solde de votre compte Amazon.\r\n\r\n\u00C9changez le code Amazon.fr Gift Card {value}\u20AC facilement via notre page d\u2019encaissement ou lisez dans le mode d\u2019emploi comment vous pouvez encaisser votre code d\u2019activation \u00E0 la main.",
+    "head": {
+        "title": "Le Chèque Cadeau Amazon {value} | Livraison immédiate par e-mail",
+        "robots": "index, follow",
+        "description":"Achetez tout simplement en ligne un Chèque Cadeau Amazon de {value}. Après paiement avec PayPal, la Carte Cadeau Amazon sera livrée immédiatement par e-mail."
+
+
+    }
+}

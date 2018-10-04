@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description d\u2019une recharge Bouygues\r\n\r\nUne recharge Bouygues de {value} vous permet de recharger votre carte pr\u00E9pay\u00E9e Bouygues. Apr\u00E8s la recharge, vous pouvez encore envoyer des SMS, t\u00E9l\u00E9phoner et surfer sur Internet ! Le montant de votre recharge, par exemple {value}, est ajout\u00E9 \u00E0 votre cr\u00E9dit Bouygues quand le paiement a \u00E9t\u00E9 termin\u00E9.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nNous vous envoyons un code par e-mail quand vous avez pay\u00E9 la recharge. Le code re\u00E7u est imm\u00E9diatement \u00E9changeable sur votre t\u00E9l\u00E9phone mobile, donc il n\u2019est pas n\u00E9cessaire d\u2019attendre. Apr\u00E8s la recharge, {value} sont ajout\u00E9s \u00E0 votre cr\u00E9dit Bouygues.\r\n\r\nEst-ce qu\u2019un forfait n\u2019est pas votre affaire ? Utilisez simplement une carte pr\u00E9pay\u00E9e Bouygues et payez seulement pour vos co\u00FBts de t\u00E9l\u00E9phone !",
+    "head": {
+        "title": "Recharge BOUYGUES Internationale {value} | Livrée directement par e-mail",
+        "robots": "index, follow",
+        "description":"Achetez facilement en ligne votre de Recharge BOUYGUES Internationale {value}. Après avoir terminé le paiement avec PayPal, le Code livré directement par e-mail."
+
+    }
+}

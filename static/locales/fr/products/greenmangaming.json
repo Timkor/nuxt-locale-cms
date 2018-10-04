@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description Greenmangaming Giftcard\r\n\r\nAvec une GreenmanGaming Gift Card {value}\u20AC vous faites ais\u00E9ment des achats sur le site web Greenmangaming. En utilisant la GreenmanGaming Gift Card {value}\u20AC vous recevez un cr\u00E9dit de {value} pour acheter des jeux.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nApr\u00E8s avoir pay\u00E9 la GreenmanGaming Gift Card {value}\u20AC vous recevez un code d\u2019activation de GreenmanGaming Gift Card {value}\u20AC avec lequel vous pouvez acheter des achats pour {value}.\r\n\r\nEchangez facilement votre Greenmangaming Giftcard de {value} via notre page d\u2019encaissement ou lisez le mode d\u2019emploi pour savoir comment \u00E9changer le code \u00E0 la main.",
+    "head": {
+        "title": "{value}",
+        "robots" : "index, follow",
+        "description":"{value}"
+
+    }
+}

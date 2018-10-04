@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description de cette carte Google Play\r\n\r\nAvec une carte cadeau Google Play de {value} , vous pouvez jouir du contenu entier dans le Google Play Store. Le cr\u00E9dit de Google Play est \u00E9galement utilisable pour le service de musique Google Play Music.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s paiement vous recevez un code d'activation de Google Play que vous pouvez encaisser imm\u00E9diatement sur votre compte Google Play. Un montant de {value} s sera ajout\u00E9 \u00E0 votre cr\u00E9dit Google dans votre Google Wallet.\r\n\r\nEncaissez le code Google Play de {value} facilement via notre page d\u2019encaissement ou lisez dans le mode d'emploi comment encaisser le code d'activation sur votre appareil Android.",
+    "head": {
+        "title": "La Carte Google Play {value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez votre crédit Google Play tout simplement en ligne avec une Carte Google Play de {value}. Après paiement avec PayPal, le Code Google Play sera livré immédiatement par e-mail."
+
+    }
+}

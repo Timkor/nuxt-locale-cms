@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description de cette carte iTunes\r\n\r\nAvec une carte cadeau iTunes de {value} , vous pouvez savourer de tout le contenu dans l'iTunes Store, le cr\u00E9dit iTunes est \u00E9galement valable dans l'App Store et le Mac Store.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s paiement vous recevez un code iTunes que vous pouvez \u00E9changer imm\u00E9diatement sur votre Apple-ID. Un montant de {value} sera ajout\u00E9 \u00E0 votre compte iTunes.\r\n\r\nEchangez la carte App Store {value} tout simplement via notre page d'encaissement ou lisez dans le mode d'emploi comment vous pouvez encaisser le code d'activation sur votre iPad et iPhone.",
+    "head": {
+        "title": "La Carte iTunes {value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez tout simplement en ligne une Carte iTunes de {value}. Après paiement avec PayPal, la Carte Cadeau iTunes sera livrée immédiatement par e-mail."
+
+    }
+}

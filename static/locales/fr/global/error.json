@@ -1,0 +1,7 @@
+{
+    "error":{
+        "pageNotFound":"Page Web non disponible",
+        "pageNotFoundDesc":"Malheureusement nous ne pouvions trouver aucune page Web à cette adresse. La page Web est peut-être temporairement inaccessible ou a été déplacée définitivement vers une nouvelle adresse.",
+        "backBtn":"Voir notre assortiment"
+    }
+}

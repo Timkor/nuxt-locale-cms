@@ -1,0 +1,13 @@
+{
+    "head": {
+        "title": "serviceclients - igiftcards.fr",
+        "robots": "index, follow",
+        "description": ""
+    },
+    "title": "# Service clients",
+    "content": "Avez-vous besoin de l'aide pour \u00E9changer votre Gift Card ou tout simplement vous avez une question ? Contactez notre Support Team, nous vous aiderons avec plaisir !",
+    "contact-btn": "Contacter",
+    "manual-content": "\r\n## Message d'erreur\r\n\r\nVous avez re\u00E7u un message d'erreur lors de l'utilisation de votre code ? Vous pouvez trouver la solution \u00E0 votre probl\u00E8me dans nos modes d\u2019emploi, nous les avons con\u00E7us afin de r\u00E9pondre au mieux \u00E0 vos questions. Si vous ne trouvez pas les instructions dont vous avez besoin, contacter le service client.",
+    "manual-btn": "Accéder au mode d'emploi",
+    "contact-content": "\r\n## Contactez-nous\r\n\r\nContactez notre service client d\u00E8s maintenant, nous sommes l\u00E0 pour vous aider ! Igiftcards service client peux vous renseigner en  **anglais**  et  **n\u00E9erlandais**."
+}

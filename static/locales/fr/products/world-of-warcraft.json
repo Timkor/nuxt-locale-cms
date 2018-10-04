@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description Carte Pr\u00E9pay\u00E9e WoW\r\n\r\n**This code can only be used for the game World of Warcraft.**\r\n\r\nAvec une carte pr\u00E9pay\u00E9e WoW 60 jours de {value} vous pouvez prolonger votre abonnement WoW sur Battle.net ! Vous ajoutez {value} au porte-monnaie Battle.net avec cette carte cadeau. Ce solde est seulement utilisable pour le jeu World of Warcraft.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s que vous avez pay\u00E9, le code de la carte WoW vous est envoy\u00E9. Ce code WoW est directement encaissable sur votre compte Battle.net. Il sont ajout\u00E9s {value} \u00E0 votre porte-monnaie Battle.net et vous resterez abonn\u00E9 pour 60 jours.\r\n\r\n\u00C9changez tout simplement la carte pr\u00E9pay\u00E9e WoW de {value} via notre page d\u2019encaissement ou conseillez le mode d\u2019emploi WoW comment \u00E9changer le code \u00E0 la main.",
+    "head":{
+        "title": "'La Carte Battle.net '{value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"'Achetez votre crédit Battle.net tout simplement en ligne avec une Carte Battle.net de '{value}. Après paiement avec PayPal, le Code Battle.net sera livré immédiatement par e-mail."
+
+    }
+}

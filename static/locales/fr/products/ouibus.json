@@ -1,0 +1,9 @@
+{
+    "content": "\r\nUtiliser votre bon d\u2019achat Ouibus {value} comme moyen de paiement pour r\u00E9server un trajet avec Ouibus France. Profitez du luxe des cars Ouibus \u00E0 partir de 5 \u20AC seulement. Wifi gratuite, prise \u00E9lectrique, trajet de jour et de nuit : voyag\u00E9 en toute tranquillit\u00E9 ! Votre bon d\u2019achat de {value} s\u2019affichera automatiquement sur votre \u00E9cran apr\u00E8s votre paiement. R\u00E9serv\u00E9 votre voyage dans les minutes qui suivent.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nVous pouvez utiliser votre  **carte pr\u00E9pay\u00E9e Ouibus**  aussit\u00F4t et pendant 1 an apr\u00E8s achat. Rendez-vous dans un  [guichet revendeur](https:\/\/fr.ouibus.com\/points-de-vente?epay=0&store=1)  de billets, sur l\u2019application Ouibus ou sur le site internet  [ouibus.com](https:\/\/fr.ouibus.com\/). Choisissez votre trajet entre l  [300 destinations](https:\/\/fr.ouibus.com\/destinations)  propos\u00E9es et proc\u00E9dez au paiement. Entrez le code re\u00E7u par iGiftcards dans le moyen de paiement \u00AB Bon d\u2019achat \u00BB, et votre trajet est pay\u00E9.\r\n\r\nSi vous n\u2019arrivez pas \u00E0 proc\u00E9der au paiement avec un code Ouibus envoy\u00E9 par iGiftcards, contactez notre  [service clients](https:\/\/igiftcards.fr\/serviceclients\/)  par live chat, e-mail ou par Messenger.",
+    "head": {
+        "title": "{value}",
+        "robots" : "index, follow",
+        "description": "Acheter votre bon d’achat Ouibus de {value} et recevez immédiatement dans votre boîte e-mail. Réserver votre trajet sans carte bancaire !"
+
+    }
+}

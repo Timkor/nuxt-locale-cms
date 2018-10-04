@@ -1,0 +1,13 @@
+{
+    "button":{
+        "continue": "Passer une commande",
+        "submit": "Envoyer",
+        "exchange": "Enchanger",
+        "checkout": "Continuer la commande",
+        "contact": "Contacter",
+        "continueShopping": "Continuer mon shopping",
+        "backToCart": "Panier",
+        "editCart":"Changer le panier",
+        "order": "Commander"
+    }
+}

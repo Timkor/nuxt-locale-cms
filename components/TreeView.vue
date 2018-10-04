@@ -1,13 +1,7 @@
 <template>
-    <div>
-        <TreeItem :path="rootHandle.path" :name="rootHandle.name" :value="rootHandle.value" :compute-children="getComputeChildren">
-        </TreeItem>
-        <slot>
-
-        </slot>
+    <div class='tree-view'>
+        <TreeItem class='root' :path="rootHandle.path" :name="name" :value="rootHandle.value" :compute-children="getComputeChildren"></TreeItem>
     </div>
-    
-    
 </template>
 <script>
 
@@ -34,7 +28,8 @@ export default {
     },
 
     props: {
-        root: Object
+        root: Object,
+        name: String
     },
 
     computed: {
@@ -65,3 +60,9 @@ export default {
     }
 }
 </script>
+<style lang="less">
+    .tree-view {
+        padding: 1rem;
+        
+    }
+</style>

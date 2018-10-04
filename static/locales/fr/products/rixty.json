@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description\r\n\r\nUtilisez votre Rixty Gift Card {value} pour t\u00E9l\u00E9charger des marchandises virtuelles en ligne. Plus de 1.000 jeux sont \u00E0 votre disposition ! Achetez-vous, par exemple, CrossFire, ArcheAge ou World of Tanks.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nAvec la Rixty Gift Card {value}, vous achetez facilement et en toute s\u00E9curit\u00E9 du cr\u00E9dit pour t\u00E9l\u00E9charger des jeux en ligne. Vous n\u2019aurez pas besoin d\u2019une carte de cr\u00E9dit.\r\n\r\nEchangez votre Rixty Gift Card {value} simplement sur votre compte personnel Rixty.",
+    "head": {
+        "title": "La Carte Rixty de {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"{value}"
+
+    }
+}

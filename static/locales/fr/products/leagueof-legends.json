@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description de la carte LoL\r\n\r\nGr\u00E2ce \u00E0 la carte pr\u00E9pay\u00E9e {value} vous pouvez acheter des nouveaux champions et skins pour votre compte LoL. Avec cette carte cadeau, {value} vous ajoutez des RIOT points sur votre compte LoL.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nAp\u00E8rs avoir termin\u00E9 le paiement, vous recevez le code LoL que vous pouvez changer directement sur votre compte League of Legends. Il est ajout\u00E9 {value} de RIOT points sur votre compte LoL.\r\n\r\nEncaissez facilement le code de la carte pr\u00E9pay\u00E9e League of Legends de {value} via la page d\u2019encaissement ou lisez le mode d\u2019emploi comment on encaisse le code \u00E0 la main.",
+    "head": {
+        "title": "La Carte Prépayée League of Legends {value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez tout simplement en ligne vos Riot points avec une Carte LoL de {value}. Après paiement avec PayPal, le Code LoL sera livré immédiatement par e-mail."
+
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "content": "\r\nAvec une carte Neosurf de {value} vous achetez sans difficult\u00E9s en ligne vos commandes. La carte Neosurf est le moyen de paiement parfait quand vous allez commander des achats en ligne. C\u2019est pratique, notamment pour effectuer des transactions internationales, ou encore pour payer vos vacances \u00E0 l\u2019\u00E9tranger par exemple. Apr\u00E8s avoir achet\u00E9 la carte Neosurf, un code de {value} est envoy\u00E9, sur votre bo\u00EEte de r\u00E9ception.\r\n\r\n## Comment \u00E7a fonctionne ?\r\n\r\nApr\u00E8s le paiement, le code pin d\u2019une carte sera visible sur votre \u00E9cran et sera envoy\u00E9 par e-mail. Ce code est imm\u00E9diatement \u00E9changeable dans les boutiques web, donc il n\u2019est pas n\u00E9cessaire d\u2019attendre.\r\n\r\nL\u2019encaissement du code est tr\u00E8s simple. Vous suivez simplement les instructions donn\u00E9es dans le mode d\u2019emploi et vous pouvez effectuer des transactions en ligne sans probl\u00E8me !",
+    "head": {
+        "title": "Le Chèque Cadeau Amazon {value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"Description de la carte Neosurf"
+
+    }
+}

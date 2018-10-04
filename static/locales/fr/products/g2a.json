@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description code G2A\r\n\r\nAvec une carte cadeau G2A de {value} vous pouvez acheter des jeux et vouchers sur G2A.com Avec le G2A giftcard, vous ajoutez {value} \u00E0 votre compte G2A.\r\n\r\n## Comment \u00E7a marche?\r\n\r\nApr\u00E8s le paiement de votre carte cadeau, vous recevez un code que vous pouvez \u00E9changer directement sur votre compte G2A. Ensuite, il est ajout\u00E9 {value} \u00E0 votre compte G2A.\r\n\r\nEncaissez le G2A code de {value} ais\u00E9ment via notre page d\u2019encaissement ou lisez le mode d\u2019emploi comment on \u00E9change le code \u00E0 la main.",
+    "head": {
+        "title": "{value}",
+        "robots" : "index, follow",
+        "description":"{value}"
+
+    }
+}

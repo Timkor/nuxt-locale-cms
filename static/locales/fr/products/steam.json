@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description de la carte Steam\r\n\r\nAvec une carte Steam de {value} , vous achetez les jeux et DLC's les plus nouveaux jeux du Steam Store. En achetant une carte cadeau Steam, vous recevez {value} s pour votre porte-monnaie Steam.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s avoir termin\u00E9 le paiement, vous recevez le code Steam que vous pouvez encaisser tout de suite sur votre compte Steam. Un montant de {value} s sera ajout\u00E9 \u00E0 votre cr\u00E9dit Steam.\r\n\r\nEchangez le code Steam de {value} tr\u00E8s facilement via notre page d'encaissement ou voyez le mode d'emploi afin d'encaisser le code de votre Steam gift \u00E0 la main.",
+    "head": {
+        "title": "La Carte Steam {value} | Livraison immédiate par e-mail",
+        "robots" : "index, follow",
+        "description":"Créditez votre compte Steam tout simplement en ligne avec une Carte Steam de {value}f. Après paiement avec PayPal, la Carte Cadeau Steam sera livrée immédiatement par e-mail."
+
+    }
+}

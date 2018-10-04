@@ -1,0 +1,17 @@
+{
+
+    "info": {
+        "delivery": {
+            "info": "Recevez votre carte {value} par email.",
+            "link": "En savoir plus ?"
+        },
+        "country": {
+            "info": "Choisir un autre pays",
+            "tooltip": "Vous pouvez utiliser ces cartes cadeaux uniquement dans le pays d’achat. Faites attention de choisir le bon pays."
+        },
+        "currency": {
+            "info": "Choisir la monnaie",
+            "tooltip": "Vous pouvez utiliser ces cartes cadeaux uniquement dans la monnaie d'achat. Faites attention de choisir la bonne monnaie."
+        }
+    }
+}

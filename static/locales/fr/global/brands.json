@@ -1,0 +1,145 @@
+{
+    "brand": {
+        "spotify": {
+            "name": "Carte Spotify",
+            "alt": "Spotify Acheter la Carte Cadeau"
+        },
+        
+        "lyca": {
+            "name": "Lyca Mobile",
+            "alt": "Lyca Mobile Acheter la Carte Cadeau"
+        },
+        "lebara": {
+            "name": "Lebara",
+            "alt": "Lebara Acheter la Carte Cadeau"
+        },
+        "orange": {
+            "name": "Orange",
+            "alt": "Orange Acheter la Carte Cadeau"
+        },
+        "bouygues": {
+            "name": "Bouygues",
+            "alt": "Bouygues Acheter la Carte Cadeau"
+        },
+        "lapostemobile": {
+            "name": "Laposte",
+            "alt": "Laposte Acheter la Carte Cadeau"
+        },
+        "symacom": {
+            "name": "Symacom",
+            "alt": "Symacom Acheter la Carte Cadeau"
+        },
+        "sfr": {
+            "name": "SFR",
+            "alt": "SFR Acheter la Carte Cadeau"
+        },
+        "steam": {
+            "name": "Steam",
+            "alt": "Steam Acheter la Carte Cadeau"
+        },
+        "battlenet": {
+            "name": "Battle.net",
+            "alt": "Battle.net Acheter la Carte Cadeau"
+        },
+        "nintendo": {
+            "name": "PlayStation",
+            "alt": "PlayStation Acheter la Carte Cadeau"
+        },
+        "minecraft": {
+            "name": "Minecraft",
+            "alt": "Minecraft Acheter la Carte Cadeau"
+        },
+        "xbox": {
+            "name": "Xbox",
+            "alt": "Xbox Acheter la Carte Cadeau"
+        },
+        "xboxlive": {
+            "name": "Xbox Live Gold",
+            "alt": "Xbox Live Gold Acheter la Carte Cadeau"
+        },
+        "playstation": {
+            "name": "PlayStation",
+            "alt": "PlayStation Acheter la Carte Cadeau"
+        },
+        "leagueoflegends": {
+            "name": "League of Legends",
+            "alt": "League of Legends Acheter la Carte Cadeau"
+        },
+        "guildwars": {
+            "name": "Guild Wars",
+            "alt": "Guild Wars Acheter la Carte Cadeau"
+        },
+        "swtor": {
+            "name": "Star Wars",
+            "alt": "Star Wars Acheter la Carte Cadeau"
+        },
+        "itunes": {
+            "name": "iTunes",
+            "alt": "iTunes Acheter la Carte Cadeau"
+        },
+        "googleplay": {
+            "name": "Google Play",
+            "alt": "Google Play Acheter la Carte Cadeau"
+        },
+        "netflix": {
+            "name": "Netflix",
+            "alt": "Netflix Acheter la Carte Cadeau"
+        },
+        "amazon": {
+            "name": "Amazon",
+            "alt": "Amazon Acheter la Carte Cadeau"
+        },
+        "pcs": {
+            "name": "PCS",
+            "alt": "PCS Acheter la Carte Cadeau"
+        },
+        "transcash": {
+            "name": "Transcash",
+            "alt": "Transcash Acheter la Carte Cadeau"
+        },
+        "neosurf": {
+            "name": "NeoSurf",
+            "alt": "NeoSurf Acheter la Carte Cadeau"
+        },
+        "ticketpremium": {
+            "name": "TicketPremium",
+            "alt": "TicketPremium Acheter la Carte Cadeau"
+        },
+        "kinguin": {
+            "name": "Kinguin",
+            "alt": "Kinguin Acheter la Carte Cadeau"
+        },
+        "facebook": {
+            "name": "Facebook",
+            "alt": "Facebook Acheter la Carte Cadeau"
+        },
+        "g2a": {
+            "name": "G2A.com",
+            "alt": "G2A.com Acheter la Carte Cadeau"
+        },
+        "mint": {
+            "name": "Mint",
+            "alt": "Mint Acheter la Carte Cadeau"
+        },
+        "microsoft": {
+            "name": "Microsoft",
+            "alt": "Microsoft Acheter la Carte Cadeau"
+        },
+        "zalando": {
+            "name": "Zalando",
+            "alt": "Zalando Acheter la Carte Cadeau"
+        },
+        "paysafecard": {
+            "name": "Paysafecard",
+            "alt": "Paysafecard Acheter la Carte Cadeau"
+        },
+        "greenmangaming": {
+            "name": "Greenman Gaming",
+            "alt": "Greenman Gaming Acheter la Carte Cadeau"
+        },
+        "toneofirst": {
+            "name": "Toneofirst",
+            "alt": "Toneofirst Acheter la Carte Cadeau"
+        }
+    }
+}

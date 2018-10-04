@@ -1,0 +1,27 @@
+{
+    "head": {
+        "title": "Payer - igiftcards.fr",
+        "description": "Payez votre commande en toute sécurité avec e.a. Sofort, Mister Cash, Bitcoin, Sofort et virement bancaire",
+        "robots": "noindex, follow"
+    },
+    "title": "CAISSE",
+    "step": {
+        "information": "DONNÉES PERSONNELLES",
+        "payment": "MOYEN DE PAIEMENT",
+        "receive": "REÇU ET ÉCHANGER"
+    },
+    "method": {
+        "button": {
+            "pay": "Payer",
+            "dropdown": "Choisis une option"
+        },
+        "free": "Gratis",
+        "showMoreMethods": "Plus de méthodes de paiement",
+        "paymentWarning": [
+            "En cliquant sur le bouton 'Payer', vous acceptez les conditions de révocation,",
+            " les conditions générales",
+            "et",
+            " la declaration de confidentialité."
+        ]
+    }
+}

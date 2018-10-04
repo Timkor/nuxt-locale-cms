@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description MINT card\r\n\r\nAvec un  **MINT card**  de {value} vous pouvez payer du content pour des jeux, serveurs Minecraft ou un h\u00E9bergeur web. Il y a toujours davantage d\u2019entreprises qui acceptent le MINT prepaid card, donc sans doute aussi votre MINT card ! Avec le coupon MINT, vous recevez {value} de cr\u00E9dit MINT pour d\u00E9penser !\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s le paiement, vous recevez le MINT card que vous pouvez \u00E9changer directement \u00E0 votre service pr\u00E9f\u00E9r\u00E9 comme  **Minecraft Arkham Network**,  **Minecraft GTA**,  **League of Angels**  et  **Dead Frontier**. Cette carte MINT a un cr\u00E9dit de {value} MINT.\r\n\r\n\u00C9changez un MINT card de {value} tout simplement via le page d\u2019encaissement ou lisez le mode d\u2019emploi pour savoir comment on encaisse le code MINT \u00E0 la main.",
+    "head": {
+        "title": "La Carte Mint {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez facilement en ligne du crédit avec une carte Mint  de {value}. Après avoir terminé le paiement avec PayPal, le Code Mint est livré directement par e-mail."
+
+    }
+}

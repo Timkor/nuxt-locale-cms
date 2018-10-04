@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description du code Zalando\r\n\r\nAvec un ch\u00E8que cadeau Zalando de {value} vous pouvez sans peine faire du shopping sur zalando.fr. Vous obtenez une r\u00E9duction de {value} pour vos commandes sur zalando.fr avec cette carte cadeau. Vous pouvez saisir le code Zalando pendant le paiement.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nApr\u00E8s le paiement, vous recevez imm\u00E9diatement votre ch\u00E8que Zalando avec le code valable pour des produits sur Zalando. Ce code Zalando a une valeur de {value} sur zalando.fr.\r\n\r\n\u00C9changez simplement la carte cadeau Zalando de {value} via notre page d\u2019encaissement ou lisez le mode d\u2019emploi pour savoir comment on encaisse le code \u00E0 la main.",
+    "head": {
+        "title": "Le Code Zalando de {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez facilement en ligne votre Code Zalando de {value}. Après avoir terminé le paiement avec PayPal, le Code Zalando est livré directement par e-mail"
+
+    }
+}

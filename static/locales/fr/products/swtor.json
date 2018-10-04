@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description carte abonnement Star Wars\r\n\r\nAvec une carte abonnement SWTOR de 60 jours de {value} vous pouvez prolonger votre abonnement sur www.SWTOR.com\/fr. Gr\u00E2ce \u00E0 cette carte Star Wars, 60 jours sont ajout\u00E9s \u00E0 votre compte Star Wars. Vous avez acc\u00E8s au monde entier de Star Wars quand vous vous \u00EAtes abonn\u00E9.\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nVous recevez le code SWTOR sur l\u2019\u00E9cran apr\u00E8s avoir pay\u00E9. Le code est directement valable sur votre compte SWTOR. Si vous \u00E9changez le code, 60 jours sont ajout\u00E9s sur votre compte SWTOR.\r\n\r\nEncaissez facilement la carte Star Wars de {value} via la page d\u2019encaissement ou lisez le mode d\u2019emploi pour savoir comment on encaisse le code \u00E0 la main.",
+    "head": {
+        "title": "La Carte Star Wars de {value} | Livrée directement par e-mail",
+        "robots" : "index, follow",
+        "description":"Achetez facilement en ligne votre Carte Star Wars ou un abonnement Star Wars de {value}. Après avoir terminé le paiement avec PayPal, le Code Star Wars est livré directement par e-mail."
+
+    }
+}

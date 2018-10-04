@@ -1,0 +1,26 @@
+{
+    "servicebox": {
+        "title":"Service",
+        "content":["Livraison immédiate","Envoyé par e-mail", "Prix le plus bas","Imprimer sur papier cadeau", "Ouvert 24/7", "Facture après paiement"],
+        "paysafe":"payer en toute sécurité avec : "
+        },
+    "steps":{
+        "order":"Commander",
+        "pay":"Payer",
+        "receive":"Recevoir"
+    },
+    "product":{
+        "delivery":"Directement livré par email",
+        "stock":"Pas en stock"
+    },
+    "menu": {
+        "showProductRange":["Voir","l'assortiment"],
+        "popup":{
+            "currency":{
+                "title": "MONNAIE",
+                "chooseCurrency": "Choisir la monnaie"
+
+            }
+        }
+    }
+}

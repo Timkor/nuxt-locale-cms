@@ -1,0 +1,22 @@
+{
+    "head": {
+        "title": "igiftcards",
+        "description": "",
+        "robots": "noindex, follow"
+    },
+    "title": "Ma commande",
+    "hello": "Bonjour",
+    "welcomMessage": "Merci de votre achat sur iGiftcards, on vous a envoyé la confirmation par e-mail **{email}**. La facture sera également envoyé par e-mail.",
+    "myProducts": "Mes articles",
+    "collectPoints": "Nouveauté : collectionner des points de cadeau pour recevoir des cartes-cadeaux gratuites !",
+    "changeCadeauPoints": "Enchanger mes points de cadeau!",
+    "myCadeauPointsDesc": "Vous avez {points} point(s) de cadeau. Echangez-le(s) pour recevoir des cartes-cadeaux gratuites !",
+    "myCadeauPoints": "Points de cadeau:",
+    "exchange": "Echanger",
+    "btnRetry": "Réessayer",
+    "returnPageNotPayed": [
+        "Malheureusement, nous n’avons pas (encore) reçu votre paiement.",
+        "Si vous avez payé avec Bitcoin ou par virement bancaire, il pourrait que ça prend un peu plus de temps. Des paiements par Bitcoin prennent en général 10 minutes à traiter, des virements bancaires prennent en général 2 jours ouvrés.",
+        "Si vous avez utilisé un autre moyen de paiement et le montant a été débité, veuillez contacter notre service clients. Nous vous aiderons avec plaisir !"
+    ]
+}

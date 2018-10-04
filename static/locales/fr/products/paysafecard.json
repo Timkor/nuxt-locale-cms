@@ -1,0 +1,9 @@
+{
+    "content": "\r\n## Description de la carte Paysafecard\r\n\r\nAvec Paysafecard {value}\u20AC, vous pouvez payer pour votre service ou magasin en ligne pr\u00E9f\u00E9r\u00E9, dans le monde entier. Vous payez simplement et de mani\u00E8re anonyme avec une carte Paysafecard. Un code Paysafecard appara\u00EEt sur l\u2019\u00E9cran apr\u00E8s vous avez termin\u00E9 le paiement. Le code est directement utilisable !\r\n\r\n## Comment \u00E7a marche ?\r\n\r\nChoisissez la valeur souhait\u00E9e de votre Paysafecard et payez en toute s\u00E9curit\u00E9 avec nos moyens de paiement. Quand nous avons re\u00E7u le paiement, vous recevez Paysafecard directement par email. Ce n\u2019est pas n\u00E9cessaire d\u2019aller au magasin !\r\n\r\nIl n\u2019y a pas une d\u2019expiration pour Paysafecard, bien qu\u2019il soient demand\u00E9s des co\u00FBts de maintenance. Voyez le  [mode d\u2019emploi Paysafecard](https:\/\/igiftcards.fr\/modedemploi\/kamrakoin)  pour plus d\u2019informations \u00E0 propos de Paysafecard.",
+    "head": {
+        "title": "{value}",
+        "robots" : "index, follow",
+        "description":"{value}"
+
+    }
+}
