@@ -14,7 +14,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans'}
     ]
   },
 
@@ -46,7 +47,26 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+
+    ['nuxt-fontawesome', {
+      component: 'fa', 
+      imports: [
+        //import whole set
+        {
+          set: '@fortawesome/free-solid-svg-icons',
+          icons: ['fas']
+        },
+
+        //import 2 icons from set 
+        // please note this is PRO set in this example, 
+        // you must have it in your node_modules to actually import
+        //{
+        //  set: '@fortawesome/pro-regular-svg-icons',
+        //  icons: ['faAdjust', 'faArchive']
+        //}
+      ]
+    }]
   ],
   /*
   ** Axios module configuration

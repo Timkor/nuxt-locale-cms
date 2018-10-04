@@ -1,6 +1,12 @@
 <template>
-    <div class="item">
+    <div class="item" :class="classes">
         <div class="name" @click="select">
+            <div class='caret'>
+                <fa class="icon" :icon="['fas', 'caret-right']"></fa>
+            </div>
+            <div class='type'>
+
+            </div>
             {{name}}
         </div>
         <div class="children" v-if="open && children.length">
@@ -51,6 +57,14 @@
         },
 
         computed: {
+
+            classes() {
+                return [
+                    this.children.length ? 'composite' : 'leaf',
+                    this.open ? 'open' : 'closed'
+                ];
+            },
+
             children() {
                 return this.computeChildren(this.path, this.name, this.value);
             },
@@ -75,6 +89,33 @@
         user-select: none;
         cursor: pointer;
         
+        .name {
+            .caret {
+                width: 1rem;
+                display: inline-block;
+                text-align: center;
+
+
+            }
+
+            & > .type {
+                
+                display: none;
+            }
+        }
+        
+        &.open {
+            & > .name .caret {
+                transform: rotate(90deg);
+            }
+        }
+
+        &.leaf {
+            .name .caret {
+                visibility: hidden;
+            }
+        }
+
         .name {
             color: rgba(255, 255, 255, .8);
             font-size: .8rem;

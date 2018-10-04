@@ -62,7 +62,7 @@ export default {
 </script>
 <style lang="less">
     .tree-view {
-        padding: 1rem;
+        //padding: 1rem;
         
     }
 </style>
