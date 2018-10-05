@@ -35,6 +35,10 @@ module.exports = {
   */
   plugins: [
     {
+      src: '~/plugins/routing',
+      ssr: true
+    },
+    {
       src: '~/plugins/vue-multipane',
       ssr: true
     },
@@ -50,6 +54,9 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
+    
+    'nuxt-api',
+    
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
 

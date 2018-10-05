@@ -1,6 +1,6 @@
 <template>
-    <div style="height: 80vh">
-        <div ref="tui"></div>
+    <div class="markdown-editor">
+        <div ref="tui" class="tui-editor"></div>
     </div>
 </template>
 <script>
@@ -15,3 +15,18 @@
     }
 
 </script>
+<style lang="less">
+    .markdown-editor {
+        
+        position:relative;
+
+        .tui-editor {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+</style>

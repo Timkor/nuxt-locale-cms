@@ -5,7 +5,7 @@
                 <fa class="icon" :icon="['fas', 'caret-right']"></fa>
             </div>
             <div class='type'>
-
+                <fa class="icon" :icon="['fas', 'folder']"></fa>
             </div>
             {{name}}
         </div>
@@ -71,8 +71,10 @@
 
             route() {
                 return {
-                    name: 'collection-scope-object',
+                    name: 'collection-language-scope-object',
                     params: {
+                        collection: 'shared',
+                        language: 'fr',
                         scope: 'global.brands',
                         object: this.path.join('.')
                     } 
@@ -91,7 +93,7 @@
         
         .name {
             .caret {
-                width: 1rem;
+                width: .5rem;
                 display: inline-block;
                 text-align: center;
 
@@ -99,8 +101,9 @@
             }
 
             & > .type {
-                
-                display: none;
+                width: 1rem;
+                display: inline-block;
+                text-align: center;
             }
         }
         

@@ -29,7 +29,7 @@
             </div>
             <div class="pane treeview">
                 <h1>
-                    Transifex
+                    Translate
                 </h1>
                 <TreeView :name="'Collection view'" :root="root">
                     <template slot-scope="{name, value}">
@@ -183,7 +183,7 @@ h2 {
         }
 
         & > .treeview {
-            box-shadow: -3px 0 10px rgba(0,0,0,.25);
+            box-shadow: -1px 0 3px rgba(0,0,0,.25);
             background-color: #204065;
             padding: 0;
             padding-left: 1rem;
@@ -192,8 +192,8 @@ h2 {
             white-space: nowrap;
 
             h1 {
-                color: #00ff9e;
-                opacity: .75;
+                color: #5dd7ff;// #00ff9e;
+                opacity: .9;
                 height: 4rem;
                 line-height: 4rem;
                 margin: 0;
@@ -244,6 +244,8 @@ h2 {
                 padding-left: 2rem;
                 line-height: 4rem;
             }
+
+            padding-top: 5rem;
         }
 
         & > .info {
@@ -263,11 +265,11 @@ h2 {
         background-color: #F7F8FB;
         width: 10px;
         &.drop-left{
-            box-shadow: -3px 0 3px rgba(0,0,0,.25);
+            box-shadow: -1px 0 3px rgba(0,0,0,.25);
         }
 
         &.drop-right {
-            box-shadow: 3px 0 3px rgba(0,0,0,.25);
+            box-shadow: 1px 0 3px rgba(0,0,0,.25);
         }
 
         &:before {
