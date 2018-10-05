@@ -37,6 +37,10 @@ module.exports = {
     {
       src: '~/plugins/vue-multipane',
       ssr: true
+    },
+    {
+      src: '~/plugins/tui-editor',
+      ssr: false
     }
   ],
 

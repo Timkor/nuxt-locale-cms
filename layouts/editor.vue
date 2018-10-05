@@ -4,11 +4,14 @@
         <multipane class="custom-resizer" layout="vertical">
             <div class="pane sidebar">
                 <div>
+                    <div class="item mb-1">
+                        <logo></logo>
+                    </div>
                     <div class="item" title="To Do">
                         <fa class="icon" :icon="['fas', 'list']"></fa>
                     </div>
-                    <div class="item" title="Routing">
-                        <fa class="icon" :icon="['fas', 'route']"></fa>
+                    <div class="item" title="Pages">
+                        <fa class="icon" :icon="['fas', 'file']"></fa>
                     </div>
                     <div class="item active" title="Database">
                         <fa class="icon" :icon="['fas', 'database']"></fa>
@@ -25,7 +28,9 @@
                 </div>
             </div>
             <div class="pane treeview">
-                
+                <h1>
+                    Transifex
+                </h1>
                 <TreeView :name="'Collection view'" :root="root">
                     <template slot-scope="{name, value}">
                         {{name}}
@@ -41,17 +46,24 @@
                 <TreeView :name="'Object view'" :root="selectedScope.data">
                 </TreeView>
             </div>
-            <multipane-resizer></multipane-resizer>
+            <multipane-resizer class="drop-left"></multipane-resizer>
             
             <div class="pane content" :style="{ flexGrow: 1 }">
-                <div>
-                    <h6 class="title is-6">Pane 3</h6>
-                </div>
+                <nav class="menu"> 
+                    Menu
+
+                    <b-button style="margin: .8rem 1rem; background-color: #089c6d; border-color: #089c6d;" variant="primary" class="float-right">Save changes</b-button>
+                </nav>
+                <nuxt />
+            </div>
+
+            <multipane-resizer class="drop-right"></multipane-resizer>
+            <div class="pane info">
+                &nbsp;
             </div>
         </multipane>
-
     </div>
-    <nuxt />
+    
 </div>
 </template>
 
@@ -60,11 +72,13 @@ import {
     mapGetters
 } from 'vuex';
 
+import Logo from '~/components/Logo';
 import TreeView from '~/components/TreeView';
 
 export default {
 
     components: {
+        Logo,
         TreeView
     },
 
@@ -105,7 +119,20 @@ export default {
 <style lang="less">
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    //'Open Sans', sans-serif;
+    color: #445;
+    font-size: .8rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #204065;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #2a598f;
 }
 
 .editor {
@@ -136,7 +163,6 @@ body {
             background-color: #193754;
             width: 4rem;
             padding: 0;
-            padding-top: 1rem;
 
             .item {
                 width: 4rem;
@@ -149,17 +175,36 @@ body {
                 &:hover, &.active {
                     color: white;
                 }
+
+                &:first-child {
+                    height: 4rem;
+                }
             }
         }
 
         & > .treeview {
             box-shadow: -3px 0 10px rgba(0,0,0,.25);
             background-color: #204065;
+            padding: 0;
+            padding-left: 1rem;
+            
+            overflow-x: hidden;
+            white-space: nowrap;
 
+            h1 {
+                color: #00ff9e;
+                opacity: .75;
+                height: 4rem;
+                line-height: 4rem;
+                margin: 0;
+            }
+
+            & > .tree-view {
+            }
+            
             .item .name {
                 height: 1.5rem;
                 line-height: 1.5rem;
-
             }
 
             .root > .name {
@@ -179,6 +224,33 @@ body {
                 color: white;
             }
         }
+
+        & > .content {
+            background-color: #F7F8FB;
+            color: #47494E;
+            z-index: 3;
+            @fill-color: #DBE1EC;
+            overflow: visible;
+
+            .menu {
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: -10px;
+                right: -10px;
+                height: 4rem;
+                z-index: 3;
+                box-shadow: 0 1px 3px rgba(0,0,0,.25);
+                padding-left: 2rem;
+                line-height: 4rem;
+            }
+        }
+
+        & > .info {
+            z-index: 1;
+            background-color: #204065;
+            width: 200px;
+        }
     }
 
     .custom-resizer>.pane~.pane {}
@@ -187,7 +259,16 @@ body {
         margin: 0;
         left: 0;
         position: relative;
-        box-shadow: -3px 0 5px rgba(0,0,0,.5);
+        z-index: 2;
+        background-color: #F7F8FB;
+        width: 10px;
+        &.drop-left{
+            box-shadow: -3px 0 3px rgba(0,0,0,.25);
+        }
+
+        &.drop-right {
+            box-shadow: 3px 0 3px rgba(0,0,0,.25);
+        }
 
         &:before {
             display: block;

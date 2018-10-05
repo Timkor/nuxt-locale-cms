@@ -21,7 +21,9 @@
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
     "nuxt": "^2.0.0",
+    "nuxt-api": "0.0.1",
     "nuxt-fontawesome": "^0.3.0",
+    "tui-editor": "^1.2.6",
     "vue-multipane": "^0.9.5",
     "vue-split-layout": "0.0.12"
   },
