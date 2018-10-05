@@ -1,6 +1,6 @@
 <template>
     <div class='tree-view'>
-        <TreeItem class='root' :path="rootHandle.path" :name="name" :value="rootHandle.value" :compute-children="getComputeChildren"></TreeItem>
+        <TreeItem class='root' :path="[]" :node="root"></TreeItem>
     </div>
 </template>
 <script>
@@ -34,26 +34,6 @@ export default {
 
     computed: {
 
-        rootHandle() {
-            return new TreeItemHandle([], 'root', this.root);
-        },
-
-        getComputeChildren() {
-            return (path, name, value) => {
-
-                if (value instanceof Object) {
-              
-
-                    return Object.keys(value).map(key => new TreeItemHandle(
-                        path.slice().concat([key]), 
-                        key, 
-                        value[key]
-                    ));
-                }
-
-                return [];
-            };
-        }
     },
 
     methods: {

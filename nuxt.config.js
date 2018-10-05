@@ -56,7 +56,7 @@ module.exports = {
     '@nuxtjs/axios',
     
     'nuxt-api',
-    
+
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
 
@@ -64,6 +64,10 @@ module.exports = {
       component: 'fa', 
       imports: [
         //import whole set
+        {
+          set: '@fortawesome/free-regular-svg-icons',
+          icons: ['far']
+        },
         {
           set: '@fortawesome/free-solid-svg-icons',
           icons: ['fas']

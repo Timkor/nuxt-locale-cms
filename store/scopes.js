@@ -13,9 +13,13 @@ export const mutations = {
         state.selectedScope = scopeId;
     },
 
+    addScope(state, scope) {
+        state.scopeList.push(scope.id);
+        state.scopes[scope.id] = scope;
+    },
+
     setScope(state, scope) {
         state.scopes[scope.id] = scope;
-        console.log(scope);
     }
 }
 
@@ -23,16 +27,18 @@ export const actions = {
 
     fetchAll({state, dispatch}) {
         
-        return Promise.all(
-            state.scopeList.map(scopeId => dispatch('fetchScope', scopeId))
-        );
+        return this.$axios.$get('/api/scopes').then(scopes => {
+            return Promise.all(
+                scopes.map(scopeId => dispatch('fetchScope', scopeId))
+            );
+        });
     },
 
     fetchScope({commit}, scopeId) {
         var path = scopeId.split('.').join('/');
-        return this.$axios.$get(`/locales/fr/${path}.json`).then(scopeData => {
+        return this.$axios.$get(`/api/scopes/${scopeId}`).then(scopeData => {
             
-            commit('setScope', {
+            commit('addScope', {
                 id: scopeId,
                 data: scopeData
             });

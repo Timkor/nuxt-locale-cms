@@ -4,13 +4,13 @@
             <div class='caret'>
                 <fa class="icon" :icon="['fas', 'caret-right']"></fa>
             </div>
-            <div class='type'>
-                <fa class="icon" :icon="['fas', 'folder']"></fa>
+            <div class='type' v-if="icon">
+                <fa class="icon" :icon="icon"></fa>
             </div>
             {{name}}
         </div>
-        <div class="children" v-if="open && children.length">
-            <TreeItem v-for="(child) in children" :key="child.key" :path="child.path" :name="child.name" :value="child.value" :compute-children="computeChildren"></TreeItem>
+        <div class="children" v-if="open && children">
+            <TreeItem v-for="(child) in children" :key="child.name" :path="[...path, child.name]" :node="child" @click="bubbleClick($event)"></TreeItem>
         </div>
     </div>
 </template>
@@ -22,13 +22,7 @@
 
         props: {
             path: Array,
-            name: String,
-            value: [Object, String, Number],
-
-            computeChildren: {
-                type: Function,
-                required: true
-            }
+            node: Object
         },
 
         data() {
@@ -45,13 +39,14 @@
 
             select() {
                 
-                if (this.children.length) {
+                if (this.children && this.children.length) {
                     
                     this.toggle();
 
                 } else {
-                    console.log('a')
-                    this.$router.push(this.route);
+                    if (this.to) {
+                        this.$router.push(this.to);
+                    }
                 }
             }
         },
@@ -60,25 +55,31 @@
 
             classes() {
                 return [
-                    this.children.length ? 'composite' : 'leaf',
-                    this.open ? 'open' : 'closed'
+                    this.children && this.children.length ? 'composite' : 'leaf',
+                    this.open ? 'open' : 'closed',
+                    this.active ? 'active' : 'inactive'
                 ];
             },
 
-            children() {
-                return this.computeChildren(this.path, this.name, this.value);
+            icon() {
+                return this.node.icon;
             },
 
-            route() {
-                return {
-                    name: 'collection-language-scope-object',
-                    params: {
-                        collection: 'shared',
-                        language: 'fr',
-                        scope: 'global.brands',
-                        object: this.path.join('.')
-                    } 
-                };
+            name() {
+                return this.node.name;
+            },
+
+            children() {
+                return this.node.children;
+            },
+
+            to() {
+                return this.node.to;
+            },
+
+            active() {
+                console.log(this.$route.path);
+                return this.to == this.$route.path;  
             }
         }
     }

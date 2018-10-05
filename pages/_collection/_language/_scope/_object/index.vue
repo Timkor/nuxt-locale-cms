@@ -25,7 +25,8 @@
         </div>
 
         <h2 class="mt-3">Value</h2>
-        <markdown-editor style="flex: 1 1 auto;">
+        <markdown-editor style="flex: 1 1 auto;" :value="value">
+            
         </markdown-editor>
         
     </div>
@@ -33,6 +34,7 @@
 <script>
 import TreeView from '~/components/TreeView';
 import MarkdownEditor from '~/components/MarkdownEditor';
+import {mapGetters} from 'vuex';
 
 export default {
     layout: 'editor',
@@ -52,9 +54,20 @@ export default {
     },
 
     fetch({params, store}) {
-
         return store.dispatch('scopes/selectScope', params.scope);
-    }
+    },
+
+    computed: {
+        ...mapGetters({
+            selectedScope: 'scopes/selectedScope'
+        }),
+
+        value() {
+            return this.object.split('.').reduce((current, key) => current[key], this.selectedScope.data);
+        }
+
+        
+    },
 }
 
 </script>

@@ -9,8 +9,15 @@
 
     export default {
 
+        props: {
+            value: {
+                type: String,
+                default: ''
+            }
+        },
+
         mounted() {
-            this.$createTuiEditor(this.$refs.tui);
+            this.$createTuiEditor(this.$refs.tui, this.value);
         }
     }
 

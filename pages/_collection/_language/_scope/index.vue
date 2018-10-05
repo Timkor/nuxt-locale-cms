@@ -5,8 +5,16 @@
 </template>
 <script>
 
+import {mapGetters} from 'vuex';
+
 export default {
-    layout: 'editor'
+    layout: 'editor',
+
+    
+
+    fetch({params, store}) {
+        return store.dispatch('scopes/selectScope', params.scope);
+    }
 }
 
 </script>

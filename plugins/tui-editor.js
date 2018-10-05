@@ -8,9 +8,10 @@ require('highlight.js/styles/github.css'); // code block highlight
 
 var Editor = require('tui-editor');
 
-Vue.prototype.$createTuiEditor = function (element) {
+Vue.prototype.$createTuiEditor = function (element, value) {
     return new Editor({
         el: element,
+        initialValue: value,
         initialEditType: 'wysiwyg',
         previewStyle: 'vertical',
         height: '100%'

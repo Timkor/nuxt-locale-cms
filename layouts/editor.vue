@@ -31,19 +31,11 @@
                 <h1>
                     Translate
                 </h1>
-                <TreeView :name="'Collection view'" :root="root">
-                    <template slot-scope="{name, value}">
-                        {{name}}
-                    </template>
-                </TreeView>
+                <TreeView :name="'Collection view'" :root="root"></TreeView>
 
-                <TreeView :name="'Scope view'" :root="scopeRoot">
-                    <template slot-scope="{name, value}">
-                        {{name}}
-                    </template>
-                </TreeView>
+                <TreeView :name="'Scope view'" :root="scopeNode"></TreeView>
 
-                <TreeView :name="'Object view'" :root="selectedScope.data">
+                <TreeView :name="'Object view'" :root="objectNode">
                 </TreeView>
             </div>
             <multipane-resizer class="drop-left"></multipane-resizer>
@@ -96,11 +88,11 @@ export default {
             selectedScope: 'scopes/selectedScope'
         }),
 
-        scopeRoot() {
+        scopeNode() {
             var scopeRoot = {};
 
             this.scopes.forEach(scope => {
-
+                
                 var current = scopeRoot;
 
                 scope.id.split('.').forEach(part => {
@@ -110,8 +102,90 @@ export default {
                 Object.assign(scope);
             })
 
-            return scopeRoot;
+
+
+            return this.createScopeNode([], 'Scope view', scopeRoot, null);
+        },
+
+        objectNode() {
+
+            if (this.selectedScope) {
+                return this.createObjectNode([], 'Object view', this.selectedScope.data, null);
+            }
+
+            return {
+                name: 'Object view',
+            };
         }
+    },
+
+    methods: {
+
+        createScopeNode(path, name, scope, icon) {
+
+            var folders = [];
+            var scopes = [];
+
+            const keys = Object.keys(scope);
+
+            if (keys.length == 0) {
+                return {
+                    icon: typeof icon != 'undefined' ? icon : ['far', 'file'],
+                    name: name,
+                    to: this.$routing.scopeURL('igiftcards', 'fr', path.join('.'))
+                }
+            }
+
+            keys.sort().forEach(name => {
+
+                var childNode = this.createScopeNode([...path, name], name, scope[name]);
+
+                if (!childNode.children) {
+                    scopes.push(childNode);
+                } else {
+                    folders.push(childNode);
+                }
+            });
+
+            return {
+                icon: typeof icon != 'undefined' ? icon : ['fas', 'folder'],
+                name: name,
+                children: [...folders, ...scopes]
+            }
+        },
+
+        createObjectNode(path, name, object, icon) {
+
+            var folders = [];
+            var scopes = [];
+
+            const keys = Object.keys(object);
+
+            if (typeof object == 'string') {
+                return {
+                    icon: typeof icon != 'undefined' ? icon : ['far', 'circle'],
+                    name: name,
+                    to: this.$routing.objectURL('igiftcards', 'fr', this.selectedScope.id, path.join('.'))
+                }
+            }
+
+            keys.sort().forEach(name => {
+
+                var childNode = this.createObjectNode([...path, name], name, object[name]);
+
+                if (!childNode.children) {
+                    scopes.push(childNode);
+                } else {
+                    folders.push(childNode);
+                }
+            });
+
+            return {
+                icon: typeof icon != 'undefined' ? icon : ['fas', 'cube'],
+                name: name,
+                children: [...folders, ...scopes]
+            }
+        },
     }
 }
 </script>
@@ -189,7 +263,12 @@ h2 {
             padding-left: 1rem;
             
             overflow-x: hidden;
+            overflow-y: scroll;
             white-space: nowrap;
+
+            &::-webkit-scrollbar { 
+                display: none; 
+            }
 
             h1 {
                 color: #5dd7ff;// #00ff9e;
