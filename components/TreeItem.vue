@@ -122,7 +122,7 @@
 
         .name {
             color: rgba(255, 255, 255, .8);
-            font-size: .8rem;
+            
         }
 
         .children {

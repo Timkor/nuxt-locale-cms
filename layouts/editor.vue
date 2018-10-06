@@ -2,56 +2,19 @@
 <div>
     <div class="editor">
         <multipane class="custom-resizer" layout="vertical">
-            <div class="pane sidebar">
-                <div>
-                    <div class="item mb-1">
-                        <logo></logo>
-                    </div>
-                    <div class="item" title="To Do">
-                        <fa class="icon" :icon="['fas', 'list']"></fa>
-                    </div>
-                    <div class="item" title="Pages">
-                        <fa class="icon" :icon="['fas', 'file']"></fa>
-                    </div>
-                    <div class="item active" title="Database">
-                        <fa class="icon" :icon="['fas', 'database']"></fa>
-                    </div>
-                    <div class="item" title="Search">
-                        <fa class="icon" :icon="['fas', 'search']"></fa>
-                    </div>
-                    <div class="item" title="Source control">
-                        <fa class="icon" :icon="['fas', 'code-branch']"></fa>
-                    </div>
-                    <div class="item" title="Settings">
-                        <fa class="icon" :icon="['fas', 'cog']"></fa>
-                    </div>
-                </div>
-            </div>
-            <div class="pane treeview">
-                <h1>
-                    Translate
-                </h1>
-                <TreeView :name="'Collection view'" :root="root"></TreeView>
+            
+            <Navigation class="pane" />
+            
+            <Sidebar class="pane" />
 
-                <TreeView :name="'Scope view'" :root="scopeNode"></TreeView>
-
-                <TreeView :name="'Object view'" :root="objectNode">
-                </TreeView>
-            </div>
             <multipane-resizer class="drop-left"></multipane-resizer>
             
             <div class="pane content" :style="{ flexGrow: 1 }">
                 <nav class="menu"> 
                     Menu
-
                     <b-button style="margin: .8rem 1rem; background-color: #089c6d; border-color: #089c6d;" variant="primary" class="float-right">Save changes</b-button>
                 </nav>
                 <nuxt />
-            </div>
-
-            <multipane-resizer class="drop-right"></multipane-resizer>
-            <div class="pane info">
-                &nbsp;
             </div>
         </multipane>
     </div>
@@ -65,128 +28,16 @@ import {
 } from 'vuex';
 
 import Logo from '~/components/Logo';
-import TreeView from '~/components/TreeView';
+import Navigation from '~/components/layout/Navigation';
+import Sidebar from '~/components/layout/Sidebar';
 
 export default {
 
     components: {
         Logo,
-        TreeView
+        Navigation,
+        Sidebar,
     },
-
-    data() {
-        return {
-            root: {
-
-            }
-        }
-    },
-
-    computed: {
-        ...mapGetters({
-            scopes: 'scopes/scopes',
-            selectedScope: 'scopes/selectedScope'
-        }),
-
-        scopeNode() {
-            var scopeRoot = {};
-
-            this.scopes.forEach(scope => {
-                
-                var current = scopeRoot;
-
-                scope.id.split('.').forEach(part => {
-                    current = (current[part] = current[part] || {});
-                })
-
-                Object.assign(scope);
-            })
-
-
-
-            return this.createScopeNode([], 'Scope view', scopeRoot, null);
-        },
-
-        objectNode() {
-
-            if (this.selectedScope) {
-                return this.createObjectNode([], 'Object view', this.selectedScope.data, null);
-            }
-
-            return {
-                name: 'Object view',
-            };
-        }
-    },
-
-    methods: {
-
-        createScopeNode(path, name, scope, icon) {
-
-            var folders = [];
-            var scopes = [];
-
-            const keys = Object.keys(scope);
-
-            if (keys.length == 0) {
-                return {
-                    icon: typeof icon != 'undefined' ? icon : ['far', 'file'],
-                    name: name,
-                    to: this.$routing.scopeURL('igiftcards', 'fr', path.join('.'))
-                }
-            }
-
-            keys.sort().forEach(name => {
-
-                var childNode = this.createScopeNode([...path, name], name, scope[name]);
-
-                if (!childNode.children) {
-                    scopes.push(childNode);
-                } else {
-                    folders.push(childNode);
-                }
-            });
-
-            return {
-                icon: typeof icon != 'undefined' ? icon : ['fas', 'folder'],
-                name: name,
-                children: [...folders, ...scopes]
-            }
-        },
-
-        createObjectNode(path, name, object, icon) {
-
-            var folders = [];
-            var scopes = [];
-
-            const keys = Object.keys(object);
-
-            if (typeof object == 'string') {
-                return {
-                    icon: typeof icon != 'undefined' ? icon : ['far', 'circle'],
-                    name: name,
-                    to: this.$routing.objectURL('igiftcards', 'fr', this.selectedScope.id, path.join('.'))
-                }
-            }
-
-            keys.sort().forEach(name => {
-
-                var childNode = this.createObjectNode([...path, name], name, object[name]);
-
-                if (!childNode.children) {
-                    scopes.push(childNode);
-                } else {
-                    folders.push(childNode);
-                }
-            });
-
-            return {
-                icon: typeof icon != 'undefined' ? icon : ['fas', 'cube'],
-                name: name,
-                children: [...folders, ...scopes]
-            }
-        },
-    }
 }
 </script>
 
@@ -196,7 +47,7 @@ body {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     //'Open Sans', sans-serif;
     color: #445;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 h1 {
@@ -225,84 +76,10 @@ h2 {
         bottom: 0;
 
         & > .pane {
-            text-align: left;
-            padding: 15px;
             overflow: hidden;
-
-            //border: 1px solid #ccc;
-            
         }
 
-        & > .sidebar {
-            background-color: #193754;
-            width: 4rem;
-            padding: 0;
-
-            .item {
-                width: 4rem;
-                height: 3rem;
-                text-align: center;
-                line-height: 3rem;
-                color: rgba(255, 255, 255, .6);
-                font-size: 1.5rem;
-
-                &:hover, &.active {
-                    color: white;
-                }
-
-                &:first-child {
-                    height: 4rem;
-                }
-            }
-        }
-
-        & > .treeview {
-            box-shadow: -1px 0 3px rgba(0,0,0,.25);
-            background-color: #204065;
-            padding: 0;
-            padding-left: 1rem;
-            
-            overflow-x: hidden;
-            overflow-y: scroll;
-            white-space: nowrap;
-
-            &::-webkit-scrollbar { 
-                display: none; 
-            }
-
-            h1 {
-                color: #5dd7ff;// #00ff9e;
-                opacity: .9;
-                height: 4rem;
-                line-height: 4rem;
-                margin: 0;
-            }
-
-            & > .tree-view {
-            }
-            
-            .item .name {
-                height: 1.5rem;
-                line-height: 1.5rem;
-            }
-
-            .root > .name {
-                
-                &:before {
-                    background-color: lighten(#204065, 10%);
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    display: block;
-                    content: ' ';
-                    height: 1.5rem;
-                    z-index: -1;
-                    box-shadow: 0 1px 3px rgba(0,0,0,.5);
-                }
-
-                color: white;
-            }
-        }
+        
 
         & > .content {
             background-color: #F7F8FB;
@@ -326,15 +103,7 @@ h2 {
 
             padding-top: 5rem;
         }
-
-        & > .info {
-            z-index: 1;
-            background-color: #204065;
-            width: 200px;
-        }
     }
-
-    .custom-resizer>.pane~.pane {}
 
     .custom-resizer>.multipane-resizer {
         margin: 0;
