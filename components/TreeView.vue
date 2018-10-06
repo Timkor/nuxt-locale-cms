@@ -1,6 +1,6 @@
 <template>
     <div class='tree-view'>
-        <TreeItem class='root' :path="[]" :node="root"></TreeItem>
+        <TreeItem class='root' @select="onSelect" :path="[]" :node="root" :initialDepth="initialDepth"></TreeItem>
     </div>
 </template>
 <script>
@@ -27,9 +27,19 @@ export default {
         TreeItem
     },
 
+    data() {
+        return {
+            selectedItem: null
+        };
+    },
+
     props: {
         root: Object,
-        name: String
+        name: String,
+        initialDepth: {
+            type: Number,
+            default: 1
+        }
     },
 
     computed: {
@@ -37,6 +47,17 @@ export default {
     },
 
     methods: {
+        onSelect(item) {
+
+            if (this.selectedItem) {
+                this.selectedItem.selected = false;
+            }
+
+            this.selectedItem = item;
+            this.selectedItem.selected = true;
+
+            this.$emit('select', item.node);
+        }
     }
 }
 </script>

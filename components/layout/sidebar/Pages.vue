@@ -1,37 +1,16 @@
 <template>
 
     <div>
-        <TreeView :name="'Scope view'" :root="rootNode"></TreeView>
+        <TreeView :root="pagesNode"></TreeView>
+        <TreeView :root="dynamicsNode"></TreeView>
     </div>
     
     
 </template>
 <script>
-    
+    import {mapGetters} from 'vuex';
+
     import TreeView from '~/components/TreeView';
-
-
-    const routes = [
-        {
-            name: 'index',
-            path: '/'
-        },
-        {
-            name: 'brand',
-            path: '/:brand'
-        },
-        {
-            name: 'brand-giftcard',
-            path: '/:brand/giftcard'
-        },
-        {
-            name: 'service',
-            path: '/service',
-        },
-        {
-
-        }
-    ]
 
     export default {
         
@@ -41,15 +20,25 @@
 
         computed: {
 
-            rootNode() {
+            ...mapGetters({
+                routes: 'routes/routes'
+            }),
+
+            pagesNode() {
                 return {
                     name: 'Pages',
-                    children: routes.map(route => {
+                    children: this.routes.map(route => {
                         return {
                             name: route.path,
                             icon: ['far', 'file']
                         }
                     })
+                }
+            },
+
+            dynamicsNode() {
+                return {
+                    name: 'Dynamics'
                 }
             }
         }

@@ -10,7 +10,7 @@
             {{name}}
         </div>
         <div class="children" v-if="open && children">
-            <TreeItem v-for="(child) in children" :key="child.name" :path="[...path, child.name]" :node="child" @click="bubbleClick($event)"></TreeItem>
+            <TreeItem @select="onSelect" v-for="(child) in children" :key="child.name" :path="[...path, child.name]" :node="child" :initialDepth="initialDepth"></TreeItem>
         </div>
     </div>
 </template>
@@ -22,12 +22,14 @@
 
         props: {
             path: Array,
-            node: Object
+            node: Object,
+            initialDepth: Number
         },
 
         data() {
             return {
-                open: this.path.length < 2
+                open: this.path.length < this.initialDepth,
+                selected: false
             }
         },
 
@@ -39,15 +41,20 @@
 
             select() {
                 
+                
+
                 if (this.children && this.children.length) {
                     
                     this.toggle();
 
                 } else {
-                    if (this.to) {
-                        this.$router.push(this.to);
-                    }
+                    
+                    this.$emit('select', this);
                 }
+            },
+
+            onSelect(that) {
+                this.$emit('select', that);
             }
         },
 
@@ -57,7 +64,7 @@
                 return [
                     this.children && this.children.length ? 'composite' : 'leaf',
                     this.open ? 'open' : 'closed',
-                    this.active ? 'active' : 'inactive'
+                    this.selected ? 'selected' : 'unselected'
                 ];
             },
 
@@ -72,15 +79,6 @@
             children() {
                 return this.node.children;
             },
-
-            to() {
-                return this.node.to;
-            },
-
-            active() {
-                console.log(this.$route.path);
-                return this.to == this.$route.path;  
-            }
         }
     }
 

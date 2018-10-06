@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar">
+    <div class="sidebar d-flex" style="flex-direction: column;">
         <h1>
             Translate
         </h1>
@@ -64,21 +64,43 @@
             line-height: 1.5rem;
         }
 
-        .root > .name {
-            
-            &:before {
-                background-color: lighten(#204065, 10%);
-                position: absolute;
-                left: 0;
-                right: 0;
-                display: block;
-                content: ' ';
-                height: 1.5rem;
-                z-index: -1;
-                box-shadow: 0 1px 3px rgba(0,0,0,.5);
+        .item.selected {
+        
+            & > .name {
+                &:before {
+                    background-color: #008cff;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    display: block;
+                    content: ' ';
+                    height: 1.5rem;
+                    z-index: -2;
+                    //box-shadow: 0 1px 3px rgba(0,0,0,.5);
+                }
             }
+        }
 
-            color: white;
+        .item, .item.select {
+            
+            &.root > .name {
+            
+                &:before {
+                    background-color: lighten(#204065, 10%);
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    display: block;
+                    content: ' ';
+                    height: 1.5rem;
+                    z-index: -1;
+                    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+                }
+
+                
+
+                color: white;
+            }
         }
     }
 </style>

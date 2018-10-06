@@ -1,16 +1,14 @@
 <template>
-    <div>
-        <TreeView :root="root"></TreeView>
+    <div class="d-flex" style="flex: 1 1 auto; flex-direction: column;">
+        <!--<TreeView :root="root"></TreeView>-->
 
-        <TreeView :root="scopeNode"></TreeView>
-
-        <TreeView :root="objectNode">
-        </TreeView>
+        <TreeView :root="scopeNode" @select="onSelectScope" style="flex: 1 1 50%; overflow: auto; max-height: 50%" />
+        <TreeView :root="objectNode" @select="onSelectObject" :initial-depth="3" style="flex: 1 1 50%; overflow: auto; height: 50%" />
     </div>
 </template>
 <script>
 
-    import {mapGetters} from 'vuex';
+    import {mapGetters, mapActions} from 'vuex';
     
     import TreeView from '~/components/TreeView';
 
@@ -65,6 +63,31 @@
 
     methods: {
 
+        ...mapActions({
+            selectScope: 'scopes/selectScope'
+        }),
+
+        onSelectScope(node) {
+            if (node) {
+
+                this.selectScope(node.scope);
+
+                this.$router.push(
+                    this.$routing.scopeURL('igiftcards', 'fr', node.scope)
+                );
+            }
+        },
+
+        onSelectObject(node) {
+
+            if (node) {
+
+                this.$router.push(
+                    this.$routing.objectURL('igiftcards', 'fr', this.selectedScope.id, node.object)
+                )
+            }
+        },
+
         createScopeNode(path, name, scope, icon) {
 
             var folders = [];
@@ -76,7 +99,7 @@
                 return {
                     icon: typeof icon != 'undefined' ? icon : ['far', 'file'],
                     name: name,
-                    to: this.$routing.scopeURL('igiftcards', 'fr', path.join('.'))
+                    scope: path.join('.'),
                 }
             }
 
@@ -109,7 +132,7 @@
                 return {
                     icon: typeof icon != 'undefined' ? icon : ['far', 'circle'],
                     name: name,
-                    to: this.$routing.objectURL('igiftcards', 'fr', this.selectedScope.id, path.join('.'))
+                    object: path.join('.'),
                 }
             }
 
