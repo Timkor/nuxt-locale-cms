@@ -12,7 +12,7 @@ const globals = [
     'global/footer',
     'global/error',
     'global/points'
-],
+];
 
 export default {
 
@@ -23,7 +23,12 @@ export default {
     call({projectId}) {
 
         return {
-            globals: globals
+            globals: globals.map((scope, index) => {
+                return {
+                    id: index,
+                    scope: scope.replace('/', '.')
+                }
+            })
         };
     }
 }

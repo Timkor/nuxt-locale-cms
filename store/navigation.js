@@ -50,11 +50,6 @@ export const actions = {
     selectItem({commit}, item) {
         commit('setSelectedItem', item.id || item);
     },
-
-    async nuxtServerInit ({dispatch}) {
-        
-        await dispatch('scopes/fetchAll');
-    }
 }
 
 export const getters = {

@@ -2,7 +2,7 @@
 export const state = () => {
     return {
         scopes: {},
-        scopeList: ['global.brands', 'global.products'],
+        scopeList: [],
         selectedScope: null
     }
 }
@@ -35,7 +35,9 @@ export const actions = {
     },
 
     fetchScope({commit}, scopeId) {
+        
         var path = scopeId.split('.').join('/');
+
         return this.$axios.$get(`/api/scopes/${scopeId}`).then(scopeData => {
             
             commit('addScope', {

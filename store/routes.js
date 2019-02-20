@@ -27,7 +27,7 @@ export const actions = {
 
     fetchAll({state, commit}) {
         
-        return this.$axios.$get('/api/projects/igiftcards/routes').then(routes => {
+        return this.$axios.$get('/api/projects/igiftcards/routes').then(({routes}) => {
             routes.forEach(route => {
                 commit('addRoute', route);
             });

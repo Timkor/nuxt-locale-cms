@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar d-flex" style="flex-direction: column;">
         <h1>
-            Translate
+            {{selectNavigationItem.title}}
         </h1>
         <component :is="navigationComponent" />
     </div>

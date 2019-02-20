@@ -1,8 +1,8 @@
 <template>
 
     <div>
-        <TreeView :root="pagesNode"></TreeView>
-        <TreeView :root="dynamicsNode"></TreeView>
+        <TreeView :root="pagesNode" @select="onSelectPage"></TreeView>
+        <TreeView :root="dynamicsNode" @select="onSelectDynamic"></TreeView>
     </div>
     
     
@@ -30,6 +30,7 @@
                     children: this.routes.map(route => {
                         return {
                             name: route.path,
+                            route: route.name,
                             icon: ['far', 'file']
                         }
                     })
@@ -40,6 +41,20 @@
                 return {
                     name: 'Dynamics'
                 }
+            }
+        },
+
+        methods: {
+
+            onSelectPage(node) {
+                console.log('dd')
+                var route = this.$routing.pageURL('igiftcards', 'fr', node.route);
+
+                this.$router.push(route);
+            },
+
+            onSelectDynamic(node) {
+
             }
         }
     }

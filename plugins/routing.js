@@ -24,6 +24,17 @@ export default ({app}, inject) => {
             };
         },
 
+        pageURL(collection, language, route) {
+            return {
+                name: 'collection-language-pages-route', 
+                params: {
+                    collection: collection,
+                    language: language,
+                    route: route,
+                }
+            };
+        },
+
         scopeURL(collection, language, scope) {
             return {
                 name: 'collection-language-scope', 
